@@ -6,6 +6,14 @@
 //
 
 import Foundation
+import CoreImage
+
+struct Model
+{
+    var id: Int
+    var name : String
+    
+}
 
 class fmdb
 {
@@ -14,7 +22,7 @@ class fmdb
     static func createFile()
     {
         var a = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        a.appendPathComponent("FMDB File.db")
+        a.appendPathComponent("FMDBFile.db")
         file = FMDatabase(url: a)
         file.open()
         print(a.path)
@@ -38,14 +46,26 @@ class fmdb
         
     }
     
-    static func getData()
+    static func getData()->[Model]
     {
-        
+        var array = [Model]()
+        let  query = "select * from Students"
+        if let data = try? file.executeQuery(query, values: nil)
+        {
+            while data.next()
+            {
+                let name = data.object(forColumnName: "name") as? String ?? ""
+                let id = data.object(forColumnName: "id") as? Int ?? 0
+                let object = Model (id: id, name: name)
+                array.append(object)
+            }
+        }
+       return array
     }
     
     static func deleteData(id:Int,name:String)
     {
-        let query = "DELETE FROM Student WHERE id = \(id)"
+        let query = "DELETE FROM Students WHERE id = \(id)"
         try? file.executeUpdate(query, values:nil)
         print("Delete Data")
         

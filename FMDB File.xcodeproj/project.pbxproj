@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D359A29F2961085D006CDFE7 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359A29E2961085D006CDFE7 /* ViewController2.swift */; };
+		D359A2A1296108C6006CDFE7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D359A2A0296108C6006CDFE7 /* TableViewCell.swift */; };
 		D3FD0BC829DC1F1900238723 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FD0BC729DC1F1900238723 /* AppDelegate.swift */; };
 		D3FD0BCA29DC1F1900238723 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FD0BC929DC1F1900238723 /* SceneDelegate.swift */; };
 		D3FD0BCC29DC1F1900238723 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FD0BCB29DC1F1900238723 /* ViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D359A29E2961085D006CDFE7 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		D359A2A0296108C6006CDFE7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		D3FD0BC429DC1F1900238723 /* FMDB File.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FMDB File.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FD0BC729DC1F1900238723 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3FD0BC929DC1F1900238723 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 		D3FD0BBB29DC1F1900238723 = {
 			isa = PBXGroup;
 			children = (
+				D359A2A0296108C6006CDFE7 /* TableViewCell.swift */,
+				D359A29E2961085D006CDFE7 /* ViewController2.swift */,
 				D3FD0BDB29DC1F2800238723 /* fmdb.swift */,
 				D3FD0BC629DC1F1900238723 /* FMDB File */,
 				D3FD0BC529DC1F1900238723 /* Products */,
@@ -176,6 +182,8 @@
 				D3FD0BDC29DC1F2800238723 /* fmdb.swift in Sources */,
 				D3FD0BEB29DC203000238723 /* FMDatabase.m in Sources */,
 				D3FD0BCA29DC1F1900238723 /* SceneDelegate.swift in Sources */,
+				D359A29F2961085D006CDFE7 /* ViewController2.swift in Sources */,
+				D359A2A1296108C6006CDFE7 /* TableViewCell.swift in Sources */,
 				D3FD0BEC29DC203000238723 /* FMDatabasePool.m in Sources */,
 				D3FD0BE929DC203000238723 /* FMResultSet.m in Sources */,
 				D3FD0BEA29DC203000238723 /* FMDatabaseAdditions.m in Sources */,

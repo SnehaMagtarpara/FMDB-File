@@ -30,5 +30,11 @@ class ViewController: UIViewController {
             fmdb.deleteData (id: b, name: t2.text ?? "" )
         }
     }
+    
+    @IBAction func getDataButtonAction(_ sender: UIButton) {
+        let navigation = storyboard?.instantiateViewController(withIdentifier:"ViewController2" ) as! ViewController2
+        navigationController?.pushViewController(navigation, animated: true)
+    }
+    
 }
 

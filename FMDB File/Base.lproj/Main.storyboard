@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FMDB_File" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ges-8L-PzA">
+                                <rect key="frame" x="20" y="95" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="4gO-2m-wR3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yZF-Or-S0g">
+                                <rect key="frame" x="20" y="165" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="2mP-zs-tr1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6J-QJ-Btz">
+                                <rect key="frame" x="20" y="221" width="98" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="Y5e-UT-VhN"/>
+                                    <constraint firstAttribute="height" constant="36" id="yVJ-H7-xma"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="svaeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qal-na-2It"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yw-os-0NR">
+                                <rect key="frame" x="158" y="221" width="98" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="4MP-mL-INL"/>
+                                    <constraint firstAttribute="height" constant="36" id="KSa-5n-3Bl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteDataButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gr1-Fy-Tsb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ges-8L-PzA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="21w-AD-0eR"/>
+                            <constraint firstItem="F6J-QJ-Btz" firstAttribute="top" secondItem="yZF-Or-S0g" secondAttribute="bottom" constant="22" id="2fv-Sc-ZVw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yZF-Or-S0g" secondAttribute="trailing" constant="20" id="6NJ-ir-eWL"/>
+                            <constraint firstItem="yZF-Or-S0g" firstAttribute="top" secondItem="Ges-8L-PzA" secondAttribute="bottom" constant="36" id="FMY-uv-wOW"/>
+                            <constraint firstItem="yZF-Or-S0g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="IYA-4E-Os0"/>
+                            <constraint firstItem="Ges-8L-PzA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="QsK-IC-FRS"/>
+                            <constraint firstItem="0yw-os-0NR" firstAttribute="top" secondItem="yZF-Or-S0g" secondAttribute="bottom" constant="22" id="S90-8F-oR1"/>
+                            <constraint firstItem="F6J-QJ-Btz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XgC-jx-Rus"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ges-8L-PzA" secondAttribute="trailing" constant="20" id="Ymp-XM-Ugw"/>
+                            <constraint firstItem="0yw-os-0NR" firstAttribute="leading" secondItem="F6J-QJ-Btz" secondAttribute="trailing" constant="40" id="qET-Ed-Har"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="t1" destination="Ges-8L-PzA" id="qNd-es-P6g"/>
+                        <outlet property="t2" destination="yZF-Or-S0g" id="Tm1-TB-QVG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="100.44642857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
